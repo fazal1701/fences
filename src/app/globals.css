@@ -1,26 +1,128 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f5ef;
+  --foreground: #171a18;
+  --surface: #ffffff;
+  --muted: #6c716d;
+  --muted-foreground: #6c716d;
+  --border: #e5e1d8;
+  --primary: #171a18;
+  --primary-foreground: #ffffff;
+  --forest: #354a3b;
+  --forest-foreground: #f7f5ef;
+  --cedar: #a7663b;
+  --cedar-foreground: #ffffff;
+  --ring: #354a3b;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --header-offset: 7.5rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-forest: var(--forest);
+  --color-forest-foreground: var(--forest-foreground);
+  --color-cedar: var(--cedar);
+  --color-cedar-foreground: var(--cedar-foreground);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-manrope);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-foreground font-semibold tracking-tight;
+    line-height: 1.05;
+  }
+
+  a {
+    @apply underline-offset-4;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-forest;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .container-site {
+    @apply mx-auto w-full max-w-[1320px] px-5 sm:px-6 lg:px-8;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-y {
+    @apply py-16 md:py-24 lg:py-28;
+  }
+
+  .section-y-tight {
+    @apply py-12 md:py-16;
+  }
+
+  .prose-narrow {
+    @apply max-w-[720px];
+  }
+
+  .safe-pb {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .field {
+    width: 100%;
+    min-height: 52px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--background);
+    padding: 0.75rem 1rem;
+  }
+
+  .field:focus {
+    outline: 2px solid var(--forest);
+    outline-offset: 2px;
+  }
 }
