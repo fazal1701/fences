@@ -2,8 +2,8 @@ export const siteConfig = {
   businessName: "Premier Fencing & Backyard Solutions Ltd.",
   shortName: "Premier Fencing",
   tagline: "Fencing, decks, gates and outdoor living across Toronto.",
-  phoneDisplay: "(519) 500-5545",
-  phoneHref: "tel:+15195005545",
+  phoneDisplay: "(647) 564-7656",
+  phoneHref: "tel:+16475647656",
   email: "sales@premierfence.ca",
   websiteUrl: "https://premierfence.ca",
   /** No street address shown on site by request */
