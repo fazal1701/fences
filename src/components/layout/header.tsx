@@ -3,9 +3,8 @@
 import { Logo } from "@/components/layout/logo";
 import { PhoneLink } from "@/components/ui/phone-link";
 import { services } from "@/lib/services";
-import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
@@ -147,10 +146,7 @@ export function Header() {
           <PhoneLink
             placement="header"
             className="inline-flex items-center gap-2 rounded-[12px] bg-primary px-3 py-2.5 text-sm text-white hover:text-white sm:px-4"
-          >
-            <Phone className="h-4 w-4 shrink-0" aria-hidden />
-            {siteConfig.phoneDisplay}
-          </PhoneLink>
+          />
           <button
             type="button"
             className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface xl:hidden"

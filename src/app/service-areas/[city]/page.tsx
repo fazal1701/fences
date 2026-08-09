@@ -96,7 +96,6 @@ export default async function CityPage({
 
       <CTASection
         heading={`Planning a project in ${area.name}?`}
-        subheading="Tell us what you're building and we'll help with the next step."
       />
 
       <script

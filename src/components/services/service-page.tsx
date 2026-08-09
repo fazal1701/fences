@@ -52,7 +52,7 @@ export function ServicePage({ content }: { content: ServicePageContent }) {
             <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-white/70">
               {siteConfig.shortName}
             </p>
-            <h1 className="mt-3 text-[40px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
+            <h1 className="mt-3 text-[40px] font-bold leading-[1.02] tracking-tight text-white md:text-[56px]">
               {content.headline}
             </h1>
             <p className="mt-5 max-w-xl text-[17px] text-white/85 md:text-[18px]">

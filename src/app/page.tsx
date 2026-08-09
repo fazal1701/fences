@@ -10,6 +10,7 @@ import { ReviewGrid } from "@/components/reviews/review-grid";
 import { HomeFAQ } from "@/components/seo/home-faq";
 import { FenceSelector } from "@/components/services/fence-selector";
 import { ServiceGrid } from "@/components/services/service-grid";
+import { siteConfig } from "@/lib/site-config";
 
 export default function HomePage() {
   return (
@@ -27,7 +28,7 @@ export default function HomePage() {
       <HomeFAQ />
       <CTASection
         heading="Ready to improve your property?"
-        subheading="Tell us what you're planning."
+        subheading={siteConfig.phoneDisplay}
       />
     </>
   );

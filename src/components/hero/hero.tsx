@@ -32,7 +32,7 @@ export function Hero() {
           <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-white/75">
             Fencing · Decks · Outdoor Living
           </p>
-          <h1 className="mt-4 text-[40px] font-bold leading-[1.0] tracking-tight sm:text-[48px] lg:text-[68px]">
+          <h1 className="mt-4 text-[40px] font-bold leading-[1.0] tracking-tight text-white sm:text-[48px] lg:text-[68px]">
             Better boundaries.
             <br />
             Better backyards.
