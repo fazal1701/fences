@@ -1,10 +1,11 @@
 "use client";
 
-import { ButtonLink } from "@/components/ui/button-link";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
+import { PhoneLink } from "@/components/ui/phone-link";
 import { fenceSelectorMap, getServiceBySlug } from "@/lib/services";
+import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
@@ -81,9 +82,13 @@ export function FenceSelector() {
         ) : null}
 
         <div className="mt-8">
-          <ButtonLink href="/quote" variant="forest">
-            Get a recommendation from our team
-          </ButtonLink>
+          <PhoneLink
+            placement="fence_selector"
+            className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-forest px-6 font-semibold text-white hover:text-white"
+          >
+            <Phone className="h-4 w-4" />
+            Call {siteConfig.phoneDisplay}
+          </PhoneLink>
         </div>
       </div>
     </section>

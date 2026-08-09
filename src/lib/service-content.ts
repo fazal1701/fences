@@ -6,7 +6,7 @@ export const woodContent: ServicePageContent = {
   title: "Wood Fencing",
   metaTitle: "Wood Fence Installation Toronto | Premier Fencing",
   metaDescription:
-    "Custom wood fencing for privacy, style and durability across Toronto. Request a free quote from Premier Fencing.",
+    "Custom wood fencing for privacy, style and durability across Toronto. Call Premier Fencing.",
   headline: "Wood fencing built around your property.",
   intro:
     "Natural appearance, strong privacy options, and flexible designs for Ontario homes — finished with gates and detailing that fit your lot.",
@@ -54,7 +54,7 @@ export const vinylContent: ServicePageContent = {
   title: "Vinyl Fencing",
   metaTitle: "Vinyl Fence Installation Toronto | Premier Fencing",
   metaDescription:
-    "Low-maintenance vinyl privacy fencing for Toronto homes. Explore styles and request a free Premier Fencing quote.",
+    "Low-maintenance vinyl privacy fencing for Toronto homes. Call Premier Fencing for styles and options.",
   headline: "Privacy without the constant maintenance.",
   intro:
     "Vinyl fencing is a strong option when you want clean privacy, reliable weather resistance, and less ongoing upkeep.",

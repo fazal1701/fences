@@ -1,7 +1,9 @@
 "use client";
 
-import { ButtonLink } from "@/components/ui/button-link";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
+import { PhoneLink } from "@/components/ui/phone-link";
+import { siteConfig } from "@/lib/site-config";
+import { Phone } from "lucide-react";
 
 const benefits = [
   {
@@ -47,9 +49,13 @@ export function WhyPremier() {
               </div>
             ))}
           </div>
-          <ButtonLink href="/contact" variant="forest" className="mt-8">
-            Talk to a Project Specialist
-          </ButtonLink>
+          <PhoneLink
+            placement="why_premier"
+            className="mt-8 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-forest px-6 font-semibold text-white hover:text-white"
+          >
+            <Phone className="h-4 w-4" />
+            Call {siteConfig.phoneDisplay}
+          </PhoneLink>
         </div>
       </div>
     </section>

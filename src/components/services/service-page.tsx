@@ -1,4 +1,3 @@
-import { ButtonLink } from "@/components/ui/button-link";
 import { FAQ } from "@/components/ui/faq";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
 import { PhoneLink } from "@/components/ui/phone-link";
@@ -61,19 +60,13 @@ export function ServicePage({ content }: { content: ServicePageContent }) {
             <p className="mt-5 max-w-xl text-[17px] text-white/85 md:text-[18px]">
               {content.intro}
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink
-                href="/quote"
-                className="bg-white text-foreground hover:bg-[#f7f5ef]"
-              >
-                {content.ctaLabel ?? "Get a Free Quote"}
-              </ButtonLink>
+            <div className="mt-8">
               <PhoneLink
                 placement="service_page"
-                className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] border border-white/30 px-6 font-semibold text-white hover:bg-white/10 hover:text-white"
+                className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-white px-6 font-semibold text-foreground hover:bg-[#f7f5ef] hover:text-foreground"
               >
                 <Phone className="h-4 w-4" />
-                Call {siteConfig.phoneDisplay}
+                {siteConfig.phoneDisplay}
               </PhoneLink>
             </div>
           </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { Logo } from "@/components/layout/logo";
-import { ButtonLink } from "@/components/ui/button-link";
 import { PhoneLink } from "@/components/ui/phone-link";
 import { services } from "@/lib/services";
 import { siteConfig } from "@/lib/site-config";
@@ -147,22 +146,14 @@ export function Header() {
         <div className="flex items-center gap-2 sm:gap-3">
           <PhoneLink
             placement="header"
-            className="hidden items-center gap-2 text-sm lg:inline-flex"
+            className="hidden items-center gap-2 rounded-[12px] bg-primary px-4 py-2.5 text-sm text-white hover:text-white sm:inline-flex"
           >
             <Phone className="h-4 w-4" aria-hidden />
             {siteConfig.phoneDisplay}
           </PhoneLink>
-          <ButtonLink
-            href="/quote"
-            variant="primary"
-            size="sm"
-            className="hidden sm:inline-flex"
-          >
-            Get a Free Quote
-          </ButtonLink>
           <a
             href={siteConfig.phoneHref}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface sm:hidden"
             aria-label={`Call Premier at ${siteConfig.phoneDisplay}`}
           >
             <Phone className="h-4 w-4" />
@@ -194,19 +185,13 @@ export function Header() {
                 </Link>
               ))}
             </nav>
-            <div className="grid gap-3 border-t border-border pt-4">
-              <ButtonLink
-                href="/quote"
-                onClick={() => setMobileOpen(false)}
-                fullWidth
-              >
-                Get Free Quote
-              </ButtonLink>
+            <div className="border-t border-border pt-4">
               <PhoneLink
                 placement="mobile_menu"
-                className="inline-flex min-h-[52px] items-center justify-center rounded-[12px] border border-border bg-surface text-base font-semibold"
+                className="inline-flex w-full min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-primary text-base font-semibold text-white hover:text-white"
               >
-                Call {siteConfig.phoneDisplay}
+                <Phone className="h-4 w-4" aria-hidden />
+                {siteConfig.phoneDisplay}
               </PhoneLink>
             </div>
           </div>

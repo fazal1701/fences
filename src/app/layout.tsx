@@ -17,7 +17,7 @@ const manrope = Manrope({
 export const metadata: Metadata = buildMetadata({
   title: "Fence & Deck Contractors Toronto | Premier Fencing",
   description:
-    "Premier Fencing installs residential and commercial fencing, decks, gates and outdoor living across Toronto. Call (647) 564-7656 or request a free quote.",
+    "Premier Fencing installs residential and commercial fencing, decks, gates and outdoor living across Toronto. Call (647) 564-7656.",
   path: "/",
 });
 

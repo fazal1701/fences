@@ -11,15 +11,15 @@ import {
 import { track } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 import { useMemo, useState } from "react";
-import { X } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { Phone, X } from "lucide-react";
+import { PhoneLink } from "@/components/ui/phone-link";
+import { siteConfig } from "@/lib/site-config";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
 
 export function GalleryClient() {
   const [category, setCategory] = useState<string>("All");
   const [city, setCity] = useState<string>("All");
   const [active, setActive] = useState<Project | null>(null);
-  const router = useRouter();
 
   const filtered = useMemo(
     () => filterProjects(category, city, projects),
@@ -113,20 +113,13 @@ export function GalleryClient() {
               </p>
               <h3 className="mt-2 text-2xl font-bold">{active.title}</h3>
               <p className="mt-2 text-muted">{active.description}</p>
-              <button
-                type="button"
-                className="mt-6 inline-flex min-h-[52px] items-center justify-center rounded-[12px] bg-primary px-6 font-semibold text-white"
-                onClick={() => {
-                  const params = new URLSearchParams();
-                  if (active.quotePrefill?.projectType)
-                    params.set("type", active.quotePrefill.projectType);
-                  if (active.quotePrefill?.fenceTypes?.[0])
-                    params.set("fence", active.quotePrefill.fenceTypes[0]);
-                  router.push(`/quote?${params.toString()}`);
-                }}
+              <PhoneLink
+                placement="gallery_lightbox"
+                className="mt-6 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-primary px-6 font-semibold text-white hover:text-white"
               >
-                Build Something Like This
-              </button>
+                <Phone className="h-4 w-4" />
+                Call {siteConfig.phoneDisplay}
+              </PhoneLink>
             </div>
           </div>
         </div>

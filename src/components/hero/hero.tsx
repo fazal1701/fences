@@ -1,6 +1,5 @@
 "use client";
 
-import { ButtonLink } from "@/components/ui/button-link";
 import { GoogleBusinessLink } from "@/components/ui/google-business-link";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
 import { PhoneLink } from "@/components/ui/phone-link";
@@ -44,16 +43,13 @@ export function Hero() {
             installed throughout {siteConfig.serviceRegion}.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <ButtonLink href="/quote" size="lg" className="bg-white text-foreground hover:bg-[#f7f5ef]">
-              Get a Free Quote
-            </ButtonLink>
+          <div className="mt-8">
             <PhoneLink
               placement="hero"
-              className="inline-flex min-h-[56px] items-center justify-center gap-2 rounded-[12px] border border-white/30 bg-white/10 px-6 text-base font-semibold text-white backdrop-blur-sm hover:bg-white/15 hover:text-white"
+              className="inline-flex min-h-[56px] items-center justify-center gap-2 rounded-[12px] bg-white px-8 text-base font-semibold text-foreground hover:bg-[#f7f5ef] hover:text-foreground"
             >
               <Phone className="h-4 w-4" aria-hidden />
-              Call {siteConfig.phoneDisplay}
+              {siteConfig.phoneDisplay}
             </PhoneLink>
           </div>
 

@@ -2,9 +2,11 @@ import { notFound } from "next/navigation";
 import { getServiceArea, serviceAreas } from "@/lib/locations";
 import { buildMetadata, breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 import { FAQ } from "@/components/ui/faq";
-import { ButtonLink } from "@/components/ui/button-link";
+import { PhoneLink } from "@/components/ui/phone-link";
 import { CTASection } from "@/components/cta/cta-section";
 import { homepageServiceCards } from "@/lib/services";
+import { siteConfig } from "@/lib/site-config";
+import { Phone } from "lucide-react";
 import Link from "next/link";
 
 export function generateStaticParams() {
@@ -48,9 +50,13 @@ export default async function CityPage({
           <p className="mt-4 max-w-2xl text-[17px] text-muted md:text-[18px]">
             {area.intro}
           </p>
-          <ButtonLink href="/quote" className="mt-8">
-            Get a Free Quote
-          </ButtonLink>
+          <PhoneLink
+            placement="service_area_page"
+            className="mt-8 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-primary px-6 font-semibold text-white hover:text-white"
+          >
+            <Phone className="h-4 w-4" />
+            {siteConfig.phoneDisplay}
+          </PhoneLink>
         </div>
       </section>
 

@@ -2,12 +2,13 @@
 
 import { ButtonLink } from "@/components/ui/button-link";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
+import { PhoneLink } from "@/components/ui/phone-link";
 import { track } from "@/lib/analytics";
 import { projects, type Project } from "@/lib/projects";
+import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
-import { ArrowRight, X } from "lucide-react";
+import { ArrowRight, Phone, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 
 export function ProjectGallery({
   items = projects.slice(0, 6),
@@ -109,8 +110,6 @@ function ProjectLightbox({
   project: Project;
   onClose: () => void;
 }) {
-  const router = useRouter();
-
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -157,22 +156,13 @@ function ProjectLightbox({
           <h3 className="mt-2 text-2xl font-bold">{project.title}</h3>
           <p className="mt-2 text-muted">{project.description}</p>
           <p className="mt-2 text-sm font-medium">{project.material}</p>
-          <button
-            type="button"
-            className="mt-6 inline-flex min-h-[52px] items-center justify-center rounded-[12px] bg-primary px-6 font-semibold text-white"
-            onClick={() => {
-              const params = new URLSearchParams();
-              if (project.quotePrefill?.projectType) {
-                params.set("type", project.quotePrefill.projectType);
-              }
-              if (project.quotePrefill?.fenceTypes?.[0]) {
-                params.set("fence", project.quotePrefill.fenceTypes[0]);
-              }
-              router.push(`/quote?${params.toString()}`);
-            }}
+          <PhoneLink
+            placement="project_lightbox"
+            className="mt-6 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-primary px-6 font-semibold text-white hover:text-white"
           >
-            Build Something Like This
-          </button>
+            <Phone className="h-4 w-4" />
+            Call {siteConfig.phoneDisplay}
+          </PhoneLink>
         </div>
       </div>
     </div>

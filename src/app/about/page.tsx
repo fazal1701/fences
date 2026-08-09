@@ -1,6 +1,6 @@
 import { CTASection } from "@/components/cta/cta-section";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
-import { ButtonLink } from "@/components/ui/button-link";
+import { PhoneLink } from "@/components/ui/phone-link";
 import { siteConfig } from "@/lib/site-config";
 import { buildMetadata } from "@/lib/seo";
 
@@ -88,9 +88,12 @@ export default function AboutPage() {
               preferences, and how you use the property. Then comes layout, materials, and a
               clear path to installation.
             </p>
-            <ButtonLink href="/quote" className="mt-6 w-fit">
-              Get a Free Quote
-            </ButtonLink>
+            <PhoneLink
+              placement="about"
+              className="mt-6 inline-flex w-fit min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-primary px-6 font-semibold text-white hover:text-white"
+            >
+              Call {siteConfig.phoneDisplay}
+            </PhoneLink>
           </div>
         </div>
       </section>
