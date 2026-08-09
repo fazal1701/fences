@@ -146,18 +146,11 @@ export function Header() {
         <div className="flex items-center gap-2 sm:gap-3">
           <PhoneLink
             placement="header"
-            className="hidden items-center gap-2 rounded-[12px] bg-primary px-4 py-2.5 text-sm text-white hover:text-white sm:inline-flex"
+            className="inline-flex items-center gap-2 rounded-[12px] bg-primary px-3 py-2.5 text-sm text-white hover:text-white sm:px-4"
           >
-            <Phone className="h-4 w-4" aria-hidden />
+            <Phone className="h-4 w-4 shrink-0" aria-hidden />
             {siteConfig.phoneDisplay}
           </PhoneLink>
-          <a
-            href={siteConfig.phoneHref}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface sm:hidden"
-            aria-label={`Call Premier at ${siteConfig.phoneDisplay}`}
-          >
-            <Phone className="h-4 w-4" />
-          </a>
           <button
             type="button"
             className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface xl:hidden"
@@ -172,7 +165,7 @@ export function Header() {
 
       {mobileOpen ? (
         <div className="fixed inset-0 top-[72px] z-50 bg-background xl:hidden">
-          <div className="flex h-full flex-col px-5 pb-28 pt-4">
+          <div className="flex h-full flex-col px-5 pb-10 pt-4">
             <nav className="flex-1 space-y-1 overflow-y-auto" aria-label="Mobile">
               {mobileNav.map((item) => (
                 <Link
@@ -185,15 +178,6 @@ export function Header() {
                 </Link>
               ))}
             </nav>
-            <div className="border-t border-border pt-4">
-              <PhoneLink
-                placement="mobile_menu"
-                className="inline-flex w-full min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-primary text-base font-semibold text-white hover:text-white"
-              >
-                <Phone className="h-4 w-4" aria-hidden />
-                {siteConfig.phoneDisplay}
-              </PhoneLink>
-            </div>
           </div>
         </div>
       ) : null}

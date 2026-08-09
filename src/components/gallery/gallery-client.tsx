@@ -11,9 +11,7 @@ import {
 import { track } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 import { useMemo, useState } from "react";
-import { Phone, X } from "lucide-react";
-import { PhoneLink } from "@/components/ui/phone-link";
-import { siteConfig } from "@/lib/site-config";
+import { X } from "lucide-react";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
 
 export function GalleryClient() {
@@ -113,13 +111,6 @@ export function GalleryClient() {
               </p>
               <h3 className="mt-2 text-2xl font-bold">{active.title}</h3>
               <p className="mt-2 text-muted">{active.description}</p>
-              <PhoneLink
-                placement="gallery_lightbox"
-                className="mt-6 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-primary px-6 font-semibold text-white hover:text-white"
-              >
-                <Phone className="h-4 w-4" />
-                Call {siteConfig.phoneDisplay}
-              </PhoneLink>
             </div>
           </div>
         </div>

@@ -2,12 +2,10 @@
 
 import { ButtonLink } from "@/components/ui/button-link";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
-import { PhoneLink } from "@/components/ui/phone-link";
 import { track } from "@/lib/analytics";
 import { projects, type Project } from "@/lib/projects";
-import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
-import { ArrowRight, Phone, X } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export function ProjectGallery({
@@ -156,13 +154,6 @@ function ProjectLightbox({
           <h3 className="mt-2 text-2xl font-bold">{project.title}</h3>
           <p className="mt-2 text-muted">{project.description}</p>
           <p className="mt-2 text-sm font-medium">{project.material}</p>
-          <PhoneLink
-            placement="project_lightbox"
-            className="mt-6 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-primary px-6 font-semibold text-white hover:text-white"
-          >
-            <Phone className="h-4 w-4" />
-            Call {siteConfig.phoneDisplay}
-          </PhoneLink>
         </div>
       </div>
     </div>

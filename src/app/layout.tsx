@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
-import { MobileConversionBar } from "@/components/layout/mobile-conversion-bar";
 import { UtilityBar } from "@/components/layout/utility-bar";
 import { buildMetadata, localBusinessJsonLd } from "@/lib/seo";
 import "./globals.css";
@@ -27,9 +26,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full bg-background font-sans text-foreground antialiased">
         <UtilityBar />
         <Header />
-        <main className="flex-1 pb-24 lg:pb-0">{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
-        <MobileConversionBar />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -1,10 +1,8 @@
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
 import { homepageServiceCards } from "@/lib/services";
 import { buildMetadata } from "@/lib/seo";
-import { PhoneLink } from "@/components/ui/phone-link";
-import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export const metadata = buildMetadata({
   title: "Residential & Commercial Fencing | Premier Fencing",
@@ -56,13 +54,6 @@ export default function FencingIndexPage() {
             </Link>
           ))}
         </div>
-        <PhoneLink
-          placement="fencing_index"
-          className="mt-10 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-primary px-6 font-semibold text-white hover:text-white"
-        >
-          <Phone className="h-4 w-4" />
-          {siteConfig.phoneDisplay}
-        </PhoneLink>
       </div>
     </section>
   );

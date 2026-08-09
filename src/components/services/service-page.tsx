@@ -1,13 +1,11 @@
 import { FAQ } from "@/components/ui/faq";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
-import { PhoneLink } from "@/components/ui/phone-link";
 import { ProjectGallery } from "@/components/gallery/project-gallery";
 import { CTASection } from "@/components/cta/cta-section";
 import { ProcessTimeline } from "@/components/cta/process-timeline";
 import { projects } from "@/lib/projects";
 import { breadcrumbJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
-import { Phone } from "lucide-react";
 
 export type ServicePageContent = {
   slug: string;
@@ -60,15 +58,6 @@ export function ServicePage({ content }: { content: ServicePageContent }) {
             <p className="mt-5 max-w-xl text-[17px] text-white/85 md:text-[18px]">
               {content.intro}
             </p>
-            <div className="mt-8">
-              <PhoneLink
-                placement="service_page"
-                className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[12px] bg-white px-6 font-semibold text-foreground hover:bg-[#f7f5ef] hover:text-foreground"
-              >
-                <Phone className="h-4 w-4" />
-                {siteConfig.phoneDisplay}
-              </PhoneLink>
-            </div>
           </div>
         </div>
       </section>

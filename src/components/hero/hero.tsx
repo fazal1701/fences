@@ -2,9 +2,8 @@
 
 import { GoogleBusinessLink } from "@/components/ui/google-business-link";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
-import { PhoneLink } from "@/components/ui/phone-link";
 import { siteConfig } from "@/lib/site-config";
-import { Check, Phone, Star } from "lucide-react";
+import { Check, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function Hero() {
@@ -42,16 +41,6 @@ export function Hero() {
             Custom fences, decks, gates and outdoor spaces professionally
             installed throughout {siteConfig.serviceRegion}.
           </p>
-
-          <div className="mt-8">
-            <PhoneLink
-              placement="hero"
-              className="inline-flex min-h-[56px] items-center justify-center gap-2 rounded-[12px] bg-white px-8 text-base font-semibold text-foreground hover:bg-[#f7f5ef] hover:text-foreground"
-            >
-              <Phone className="h-4 w-4" aria-hidden />
-              {siteConfig.phoneDisplay}
-            </PhoneLink>
-          </div>
 
           <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/85">
             {[

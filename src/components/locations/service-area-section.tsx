@@ -1,6 +1,5 @@
 import { ButtonLink } from "@/components/ui/button-link";
 import { DirectionsLink } from "@/components/ui/directions-link";
-import { PhoneLink } from "@/components/ui/phone-link";
 import { MediaPlaceholder } from "@/components/ui/media-placeholder";
 import { serviceAreas } from "@/lib/locations";
 import { siteConfig } from "@/lib/site-config";
@@ -47,9 +46,6 @@ export function ServiceAreaSection() {
             <p className="mt-2 text-muted">{siteConfig.serviceRegion}</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <DirectionsLink placement="service_area_section" />
-              <PhoneLink placement="service_area_section">
-                Call {siteConfig.phoneDisplay}
-              </PhoneLink>
             </div>
             <ButtonLink href="/service-areas" variant="secondary" className="mt-6 w-fit">
               View Service Areas

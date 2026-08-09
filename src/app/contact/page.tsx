@@ -1,14 +1,13 @@
 import { DirectionsLink } from "@/components/ui/directions-link";
 import { GoogleBusinessLink } from "@/components/ui/google-business-link";
-import { PhoneLink } from "@/components/ui/phone-link";
 import { siteConfig } from "@/lib/site-config";
 import { buildMetadata } from "@/lib/seo";
-import { Phone, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export const metadata = buildMetadata({
   title: "Contact Premier Fencing | Toronto",
   description:
-    "Call Premier Fencing in Toronto for fencing, decks, gates and outdoor living.",
+    "Contact Premier Fencing in Toronto for fencing, decks, gates and outdoor living.",
   path: "/contact",
 });
 
@@ -20,23 +19,16 @@ export default function ContactPage() {
           Let&apos;s talk about your property.
         </h1>
         <p className="mt-4 text-[17px] text-muted">
-          Call Premier. Serving {siteConfig.serviceRegion}.
+          Use the call button in the header to reach us at {siteConfig.phoneDisplay}.
+          Serving {siteConfig.serviceRegion}.
         </p>
-
-        <PhoneLink
-          placement="contact"
-          className="mt-8 inline-flex min-h-[56px] items-center justify-center gap-2 rounded-[12px] bg-primary px-8 text-lg font-semibold text-white hover:text-white"
-        >
-          <Phone className="h-5 w-5" />
-          {siteConfig.phoneDisplay}
-        </PhoneLink>
 
         <div className="mt-12 space-y-6 rounded-[16px] border border-border bg-surface p-6 md:p-8">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cedar">
               Phone
             </p>
-            <PhoneLink placement="contact" className="mt-2 text-xl" />
+            <p className="mt-2 text-xl font-semibold">{siteConfig.phoneDisplay}</p>
           </div>
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cedar">

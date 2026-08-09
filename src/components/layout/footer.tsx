@@ -1,6 +1,5 @@
 import { Logo } from "@/components/layout/logo";
 import { GoogleBusinessLink } from "@/components/ui/google-business-link";
-import { PhoneLink } from "@/components/ui/phone-link";
 import { siteConfig } from "@/lib/site-config";
 import Link from "next/link";
 
@@ -55,9 +54,7 @@ export function Footer() {
               Contact
             </p>
             <ul className="space-y-3 text-sm text-white/80">
-              <li>
-                <PhoneLink placement="footer" className="text-white hover:text-white/80" />
-              </li>
+              <li>{siteConfig.phoneDisplay}</li>
               <li>
                 <a href={`mailto:${siteConfig.email}`} className="hover:text-white">
                   {siteConfig.email}
