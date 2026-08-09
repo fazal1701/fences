@@ -7,7 +7,7 @@ import { ExternalLink, MapPin } from "lucide-react";
 
 export function DirectionsLink({
   placement = "general",
-  href = siteConfig.googleMapsWaterlooUrl,
+  href = siteConfig.googleMapsUrl,
   className,
   children = "Get Directions",
 }: {

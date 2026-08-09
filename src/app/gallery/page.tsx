@@ -3,9 +3,9 @@ import { CTASection } from "@/components/cta/cta-section";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Project Gallery | Premier Fencing Southern Ontario",
+  title: "Project Gallery | Premier Fencing Toronto",
   description:
-    "Browse fencing, decks, gates and outdoor living projects from Premier Fencing across Southern Ontario.",
+    "Browse fencing, decks, gates and outdoor living projects from Premier Fencing across Toronto.",
   path: "/gallery",
 });
 

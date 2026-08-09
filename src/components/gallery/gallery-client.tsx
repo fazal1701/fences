@@ -101,9 +101,11 @@ export function GalleryClient() {
               <X className="h-5 w-5" />
             </button>
             <MediaPlaceholder
+              src={active.image}
               title={active.title}
               tone={active.imageTone}
               aspect="aspect-[16/10]"
+              sizes="100vw"
             />
             <div className="p-6 md:p-8">
               <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cedar">

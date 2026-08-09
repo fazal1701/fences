@@ -31,7 +31,7 @@ export function ContactForm() {
           fenceTypes: [],
           priorities: [],
           streetAddress: "Contact form",
-          city: String(data.get("city") || "Southern Ontario"),
+          city: String(data.get("city") || "Toronto"),
           postalCode: "N2V1A2",
           name: String(data.get("name") || ""),
           phone: String(data.get("phone") || ""),

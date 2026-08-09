@@ -17,7 +17,6 @@ const outdoor = [
   { label: "Decks", href: "/decks" },
   { label: "Gates", href: "/gates-automation" },
   { label: "Pergolas", href: "/pergolas" },
-  { label: "Railings", href: "/decks" },
   { label: "Gallery", href: "/gallery" },
 ];
 
@@ -34,7 +33,7 @@ export function Footer() {
     <footer className="border-t border-border bg-foreground text-white">
       <div className="container-site section-y">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-1">
+          <div>
             <Logo light />
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               {siteConfig.tagline}
@@ -57,31 +56,14 @@ export function Footer() {
             </p>
             <ul className="space-y-3 text-sm text-white/80">
               <li>
-                <PhoneLink
-                  placement="footer"
-                  className="text-white hover:text-white/80"
-                />
+                <PhoneLink placement="footer" className="text-white hover:text-white/80" />
               </li>
               <li>
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="hover:text-white"
-                >
+                <a href={`mailto:${siteConfig.email}`} className="hover:text-white">
                   {siteConfig.email}
                 </a>
               </li>
-              <li className="leading-relaxed">
-                {siteConfig.waterlooAddress.full}
-              </li>
-              {siteConfig.londonAddress.verified ? (
-                <li className="leading-relaxed">
-                  {siteConfig.londonAddress.full}
-                </li>
-              ) : (
-                <li className="leading-relaxed text-white/55">
-                  London, Ontario service available
-                </li>
-              )}
+              <li className="leading-relaxed">{siteConfig.serviceRegion}</li>
             </ul>
           </div>
         </div>
@@ -90,12 +72,9 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {siteConfig.businessName}
           </p>
-          <div className="flex gap-4">
-            <Link href="/privacy" className="hover:text-white">
-              Privacy
-            </Link>
-            <span>Accessibility</span>
-          </div>
+          <Link href="/privacy" className="hover:text-white">
+            Privacy
+          </Link>
         </div>
       </div>
     </footer>
@@ -117,10 +96,7 @@ function FooterCol({
       <ul className="space-y-2.5">
         {links.map((link) => (
           <li key={link.href + link.label}>
-            <Link
-              href={link.href}
-              className="text-sm text-white/80 hover:text-white"
-            >
+            <Link href={link.href} className="text-sm text-white/80 hover:text-white">
               {link.label}
             </Link>
           </li>

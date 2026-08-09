@@ -43,10 +43,12 @@ export function ServiceGrid() {
               >
                 <div className="h-full transition-transform duration-500 ease-out group-hover:scale-[1.03]">
                   <MediaPlaceholder
+                    src={service.image}
                     title={service.name}
                     tone={service.imageTone}
                     aspect="h-full min-h-[220px]"
                     className="h-full w-full"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
               </div>

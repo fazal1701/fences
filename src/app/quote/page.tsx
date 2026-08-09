@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Get a Free Quote | Premier Fencing",
   description:
-    "Request a free fencing, deck, gate or outdoor living quote from Premier Fencing across Southern Ontario.",
+    "Request a free fencing, deck, gate or outdoor living quote from Premier Fencing across Toronto.",
   path: "/quote",
 });
 

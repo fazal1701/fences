@@ -21,7 +21,7 @@ export function GoogleBusinessLink({
 }: Props) {
   const href = hasGoogleBusinessUrl()
     ? siteConfig.googleBusinessUrl
-    : siteConfig.googleMapsWaterlooUrl;
+    : siteConfig.googleMapsUrl;
 
   return (
     <a

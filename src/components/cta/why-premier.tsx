@@ -27,10 +27,11 @@ export function WhyPremier() {
     <section className="section-y bg-surface">
       <div className="container-site grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <MediaPlaceholder
+          src="/images/projects/craftsmanship.jpg"
           title="Craftsmanship detail"
-          tone="from-[#4a3426] via-[#2e2118] to-[#17110d]"
           aspect="aspect-[4/5] lg:aspect-[5/6]"
           className="rounded-[16px]"
+          sizes="(max-width: 1024px) 100vw, 50vw"
         />
         <div>
           <h2 className="text-[32px] font-bold tracking-tight md:text-[48px]">

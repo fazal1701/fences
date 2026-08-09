@@ -108,12 +108,14 @@ export function Header() {
                                   className="group flex items-center gap-3 rounded-lg p-1.5 hover:bg-background"
                                   onClick={() => setMegaOpen(false)}
                                 >
-                                  <div className="h-12 w-12 overflow-hidden rounded-md">
+                                  <div className="relative h-12 w-12 overflow-hidden rounded-md">
                                     <MediaPlaceholder
+                                      src={s.image}
                                       title={s.shortName}
                                       tone={s.imageTone}
                                       aspect="aspect-square"
                                       className="h-full w-full"
+                                      sizes="48px"
                                     />
                                   </div>
                                   <span className="text-sm font-semibold text-foreground group-hover:text-forest">

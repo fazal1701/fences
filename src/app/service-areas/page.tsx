@@ -5,9 +5,9 @@ import { CTASection } from "@/components/cta/cta-section";
 import { ServiceAreaSection } from "@/components/locations/service-area-section";
 
 export const metadata = buildMetadata({
-  title: "Service Areas | Premier Fencing Southern Ontario",
+  title: "Service Areas | Premier Fencing Toronto",
   description:
-    "Premier Fencing serves Kitchener, Waterloo, Cambridge, Guelph, London and surrounding Southern Ontario communities.",
+    "Premier Fencing serves Toronto and surrounding areas.",
   path: "/service-areas",
 });
 
@@ -20,7 +20,7 @@ export default function ServiceAreasPage() {
             Service areas
           </h1>
           <p className="mt-4 max-w-2xl text-[17px] text-muted md:text-[18px]">
-            Local crews. Southern Ontario projects. Choose your community to see
+            Local crews. Toronto projects. Choose your community to see
             relevant fencing and outdoor living options.
           </p>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

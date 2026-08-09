@@ -2,15 +2,15 @@ import { ButtonLink } from "@/components/ui/button-link";
 import { DirectionsLink } from "@/components/ui/directions-link";
 import { GoogleBusinessLink } from "@/components/ui/google-business-link";
 import { PhoneLink } from "@/components/ui/phone-link";
+import { ContactForm } from "@/components/forms/contact-form";
 import { siteConfig } from "@/lib/site-config";
 import { buildMetadata } from "@/lib/seo";
 import { Phone, Mail } from "lucide-react";
-import { ContactForm } from "@/components/forms/contact-form";
 
 export const metadata = buildMetadata({
-  title: "Contact Premier Fencing | Request a Quote or Call",
+  title: "Contact Premier Fencing | Toronto",
   description:
-    "Contact Premier Fencing in Waterloo for fencing, decks, gates and outdoor living across Southern Ontario.",
+    "Call or request a free quote from Premier Fencing in Toronto for fencing, decks, gates and outdoor living.",
   path: "/contact",
 });
 
@@ -22,8 +22,7 @@ export default function ContactPage() {
           Let&apos;s talk about your property.
         </h1>
         <p className="mt-4 max-w-2xl text-[17px] text-muted">
-          Get a free quote or call Premier directly. We&apos;ll help you understand materials,
-          layout and next steps.
+          Get a free quote or call Premier. Serving {siteConfig.serviceRegion}.
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -59,32 +58,15 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cedar">
-                Waterloo
+                Service area
               </p>
-              <p className="mt-2 text-muted">{siteConfig.waterlooAddress.full}</p>
+              <p className="mt-2 text-muted">{siteConfig.serviceRegion}</p>
               <div className="mt-3 flex flex-wrap gap-4">
                 <DirectionsLink placement="contact" />
                 <GoogleBusinessLink placement="contact">
                   View on Google
                 </GoogleBusinessLink>
               </div>
-            </div>
-            <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cedar">
-                London
-              </p>
-              <p className="mt-2 text-muted">
-                London, Ontario service available
-                {siteConfig.londonAddress.verified
-                  ? ` — ${siteConfig.londonAddress.full}`
-                  : ""}
-              </p>
-            </div>
-            <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cedar">
-                Service areas
-              </p>
-              <p className="mt-2 text-muted">{siteConfig.serviceRegion}</p>
             </div>
           </div>
 

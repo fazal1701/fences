@@ -60,9 +60,11 @@ export function FenceSelector() {
                   className="group overflow-hidden rounded-[16px] border border-border bg-background"
                 >
                   <MediaPlaceholder
+                    src={service.image}
                     title={service.name}
                     tone={service.imageTone}
                     aspect="aspect-[16/10]"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                   <div className="p-5">
                     <h3 className="text-lg font-semibold">{service.name}</h3>

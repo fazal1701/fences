@@ -18,6 +18,7 @@ export type ServicePageContent = {
   headline: string;
   intro: string;
   tone: string;
+  image: string;
   benefits: string[];
   styles?: { title: string; body: string }[];
   faqs: { question: string; answer: string }[];
@@ -39,10 +40,13 @@ export function ServicePage({ content }: { content: ServicePageContent }) {
       <section className="relative min-h-[58vh] overflow-hidden md:min-h-[68vh]">
         <div className="absolute inset-0">
           <MediaPlaceholder
+            src={content.image}
             title={content.title}
             tone={content.tone}
             aspect="h-full min-h-[58vh] md:min-h-[68vh]"
             className="h-full w-full"
+            priority
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
         </div>
@@ -118,7 +122,7 @@ export function ServicePage({ content }: { content: ServicePageContent }) {
         items={related.length ? related : projects.slice(0, 3)}
         showViewAll
         heading="Related projects"
-        subheading="See how similar builds look on Southern Ontario properties."
+        subheading="See how similar builds look on Toronto properties."
       />
 
       <ProcessTimeline />

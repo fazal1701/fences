@@ -18,7 +18,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "The installation was clean, the crew was professional, and the finished fence completely changed how we use the backyard.",
     name: "Sarah M.",
-    city: "Kitchener",
+    city: "Toronto",
     featured: true,
     source: "curated",
   },
@@ -27,7 +27,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "We needed something low-maintenance and still private. Premier helped us compare options and install the right vinyl solution.",
     name: "James T.",
-    city: "Waterloo",
+    city: "Toronto",
     source: "curated",
   },
   {
@@ -35,7 +35,7 @@ export const testimonials: Testimonial[] = [
     quote:
       "Clear communication from quote to install. The gate and fence line look sharp and suit the property well.",
     name: "Priya K.",
-    city: "Cambridge",
+    city: "Toronto",
     source: "curated",
   },
 ];

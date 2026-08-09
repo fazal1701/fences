@@ -13,7 +13,7 @@ export function ProjectGallery({
   items = projects.slice(0, 6),
   showViewAll = true,
   heading = "Built around real homes.",
-  subheading = "Explore fencing, decking and outdoor spaces installed throughout Southern Ontario.",
+  subheading = "Explore fencing, decking and outdoor spaces installed throughout Toronto.",
 }: {
   items?: Project[];
   showViewAll?: boolean;
@@ -80,10 +80,12 @@ export function ProjectCard({
     >
       <div className="h-full transition-transform duration-500 group-hover:scale-[1.03] group-focus-visible:scale-[1.03]">
         <MediaPlaceholder
+          src={project.image}
           title={project.title}
           tone={project.imageTone}
           aspect="h-full"
           className="h-full w-full"
+          sizes="(max-width: 768px) 100vw, 33vw"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-90 transition-opacity group-hover:opacity-100" />
@@ -142,9 +144,11 @@ function ProjectLightbox({
           <X className="h-5 w-5" />
         </button>
         <MediaPlaceholder
+          src={project.image}
           title={project.title}
           tone={project.imageTone}
           aspect="aspect-[16/10]"
+          sizes="100vw"
         />
         <div className="p-6 md:p-8">
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-cedar">

@@ -5,7 +5,7 @@ const items = [
   { label: "Commercial", icon: Building2 },
   { label: "Custom Design", icon: PenTool },
   { label: "Professional Installation", icon: Wrench },
-  { label: "Southern Ontario", icon: MapPinned },
+  { label: "Toronto", icon: MapPinned },
 ];
 
 export function TrustBar() {

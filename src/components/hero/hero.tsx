@@ -13,10 +13,12 @@ export function Hero() {
     <section className="relative min-h-[72vh] overflow-hidden md:min-h-[82vh] lg:min-h-[88vh]">
       <div className="absolute inset-0">
         <MediaPlaceholder
+          src="/images/hero/premier-fence-hero.jpg"
           title="Residential fencing & outdoor living"
-          tone="from-[#2a332c] via-[#3d4a3b] to-[#1a1f1b]"
           aspect="h-full min-h-[72vh] md:min-h-[82vh] lg:min-h-[88vh]"
           className="h-full w-full"
+          priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/25" />
@@ -59,7 +61,7 @@ export function Hero() {
             {[
               "Residential & Commercial",
               "Free Project Consultation",
-              "Southern Ontario Service",
+              "Toronto Service",
             ].map((item) => (
               <li key={item} className="inline-flex items-center gap-2">
                 <Check className="h-4 w-4 text-[#c8d5c4]" aria-hidden />

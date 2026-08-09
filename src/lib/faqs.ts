@@ -32,7 +32,7 @@ export const homepageFaqs = [
   {
     question: "Which areas do you service?",
     answer:
-      "Premier serves Kitchener-Waterloo, London, and surrounding Southern Ontario communities including Cambridge, Guelph, and nearby towns.",
+      "Premier serves Toronto and surrounding areas.",
   },
   {
     question: "Can neighbours share a fence project?",

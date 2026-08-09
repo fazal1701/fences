@@ -5,9 +5,9 @@ import { siteConfig } from "@/lib/site-config";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "About Premier Fencing | Southern Ontario Fence & Deck Company",
+  title: "About Premier Fencing | Toronto Fence & Deck Company",
   description:
-    "Learn about Premier Fencing & Backyard Solutions — residential and commercial fencing, decks, gates and outdoor living across Southern Ontario.",
+    "Learn about Premier Fencing & Backyard Solutions — residential and commercial fencing, decks, gates and outdoor living across Toronto.",
   path: "/about",
 });
 
@@ -17,10 +17,12 @@ export default function AboutPage() {
       <section className="relative min-h-[50vh] overflow-hidden">
         <div className="absolute inset-0">
           <MediaPlaceholder
+            src="/images/hero/premier-fence-hero.jpg"
             title="Premier craftsmanship"
-            tone="from-[#2a332c] via-[#3d4a3b] to-[#171a18]"
             aspect="h-full min-h-[50vh]"
             className="h-full w-full"
+            priority
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-black/55" />
         </div>
@@ -55,7 +57,7 @@ export default function AboutPage() {
               siteConfig.warrantyYears
                 ? `${siteConfig.warrantyYears}-year warranty on materials and workmanship`
                 : null,
-              "Southern Ontario presence from Waterloo",
+              "Serving Toronto",
             ]
               .filter(Boolean)
               .map((item) => (
@@ -73,10 +75,11 @@ export default function AboutPage() {
       <section className="section-y bg-surface">
         <div className="container-site grid gap-8 md:grid-cols-2">
           <MediaPlaceholder
+            src="/images/projects/craftsmanship.jpg"
             title="Installation craftsmanship"
-            tone="from-[#4a3426] to-[#1a1410]"
             aspect="aspect-[4/3]"
             className="rounded-[16px]"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="flex flex-col justify-center">
             <h2 className="text-[32px] font-bold md:text-[40px]">How the team works</h2>

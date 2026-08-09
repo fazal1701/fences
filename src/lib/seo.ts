@@ -1,6 +1,6 @@
 import { siteConfig } from "./site-config";
 
-export const defaultOgImage = "/images/hero/premier-fence-hero.webp";
+export const defaultOgImage = "/images/hero/premier-fence-hero.jpg";
 
 export function buildMetadata({
   title,
@@ -42,22 +42,7 @@ export function localBusinessJsonLd() {
     url: siteConfig.websiteUrl,
     telephone: siteConfig.phoneHref.replace("tel:", ""),
     email: siteConfig.email,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: siteConfig.waterlooAddress.street,
-      addressLocality: siteConfig.waterlooAddress.city,
-      addressRegion: siteConfig.waterlooAddress.region,
-      postalCode: siteConfig.waterlooAddress.postal,
-      addressCountry: "CA",
-    },
-    areaServed: [
-      "Kitchener",
-      "Waterloo",
-      "Cambridge",
-      "Guelph",
-      "London",
-      "Southern Ontario",
-    ],
+    areaServed: [siteConfig.primaryCity, "Greater Toronto Area"],
     description: siteConfig.tagline,
   };
 }

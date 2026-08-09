@@ -15,10 +15,11 @@ export function CTASection({
     <section className="relative overflow-hidden bg-foreground text-white">
       <div className="absolute inset-0 opacity-40">
         <MediaPlaceholder
+          src="/images/hero/premier-fence-hero.jpg"
           title="Premier backyard project"
-          tone="from-[#1a1f1b] via-[#2c3a30] to-[#171a18]"
           aspect="h-full min-h-[420px]"
           className="h-full w-full"
+          sizes="100vw"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/90 to-foreground/55" />

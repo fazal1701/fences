@@ -4,13 +4,14 @@ export const woodContent: ServicePageContent = {
   slug: "wood",
   path: "/fencing/wood",
   title: "Wood Fencing",
-  metaTitle: "Wood Fence Installation Kitchener-Waterloo | Premier Fencing",
+  metaTitle: "Wood Fence Installation Toronto | Premier Fencing",
   metaDescription:
-    "Custom wood fencing for privacy, style and durability across Kitchener-Waterloo, London and Southern Ontario. Request a free quote from Premier Fencing.",
+    "Custom wood fencing for privacy, style and durability across Toronto. Request a free quote from Premier Fencing.",
   headline: "Wood fencing built around your property.",
   intro:
     "Natural appearance, strong privacy options, and flexible designs for Ontario homes — finished with gates and detailing that fit your lot.",
   tone: "from-[#5c4030] via-[#3d2a20] to-[#1a1410]",
+  image: "/images/services/wood-fence.jpg",
   benefits: [
     "Natural appearance",
     "Strong privacy",
@@ -51,13 +52,14 @@ export const vinylContent: ServicePageContent = {
   slug: "vinyl",
   path: "/fencing/vinyl",
   title: "Vinyl Fencing",
-  metaTitle: "Vinyl Fence Installation Southern Ontario | Premier Fencing",
+  metaTitle: "Vinyl Fence Installation Toronto | Premier Fencing",
   metaDescription:
-    "Low-maintenance vinyl privacy fencing for Southern Ontario homes. Explore styles and request a free Premier Fencing quote.",
+    "Low-maintenance vinyl privacy fencing for Toronto homes. Explore styles and request a free Premier Fencing quote.",
   headline: "Privacy without the constant maintenance.",
   intro:
     "Vinyl fencing is a strong option when you want clean privacy, reliable weather resistance, and less ongoing upkeep.",
   tone: "from-[#c9c4b8] via-[#8a8578] to-[#4a4640]",
+  image: "/images/services/vinyl-fence.jpg",
   benefits: [
     "Low-maintenance finish",
     "Privacy panel options",
@@ -81,11 +83,12 @@ export const ornamentalContent: ServicePageContent = {
   title: "Ornamental Fencing",
   metaTitle: "Ornamental Fence Installation | Premier Fencing",
   metaDescription:
-    "Architectural ornamental fencing for front yards, pools, estates and commercial properties across Southern Ontario.",
+    "Architectural ornamental fencing for front yards, pools, estates and commercial properties across Toronto.",
   headline: "Security with a cleaner line.",
   intro:
     "Ornamental fencing delivers presence and visibility for front yards, pools, estates, and refined commercial applications.",
   tone: "from-[#111] via-[#2a2a2a] to-[#444]",
+  image: "/images/services/ornamental-fence.jpg",
   benefits: [
     "Front yard presence",
     "Pool applications",
@@ -109,11 +112,12 @@ export const chainLinkContent: ServicePageContent = {
   title: "Chain Link Fencing",
   metaTitle: "Chain Link Fence Installation | Premier Fencing",
   metaDescription:
-    "Professionally installed chain link fencing for yards, pets, commercial sites and sports facilities in Southern Ontario.",
+    "Professionally installed chain link fencing for yards, pets, commercial sites and sports facilities in Toronto.",
   headline: "Practical security. Professionally installed.",
   intro:
     "Chain link is a durable, practical solution for backyards, pets, commercial yards, sports areas, and clear property boundaries — including black-coated options where finish matters.",
   tone: "from-[#2c3230] via-[#4a5550] to-[#1c211f]",
+  image: "/images/services/chain-link.jpg",
   benefits: [
     "Backyard boundaries",
     "Pet containment",
@@ -135,13 +139,14 @@ export const poolContent: ServicePageContent = {
   slug: "pool",
   path: "/fencing/pool",
   title: "Pool Fencing",
-  metaTitle: "Pool Fence Installation Southern Ontario | Premier Fencing",
+  metaTitle: "Pool Fence Installation Toronto | Premier Fencing",
   metaDescription:
-    "Pool fencing designed with safety, visibility and access in mind. Premier helps Southern Ontario homeowners plan the right solution.",
+    "Pool fencing designed with safety, visibility and access in mind. Premier helps Toronto homeowners plan the right solution.",
   headline: "Pool fencing designed with safety first.",
   intro:
     "Pool fencing starts with safety, then visibility, access, and how the layout works with your property. Municipal requirements vary — confirm applicable rules for your address.",
   tone: "from-[#1e3a4c] via-[#2f5a6b] to-[#13262f]",
+  image: "/images/services/pool-fence.jpg",
   benefits: [
     "Material options for visibility and privacy",
     "Gate and access considerations",
@@ -165,11 +170,12 @@ export const petContent: ServicePageContent = {
   title: "Pet Fencing",
   metaTitle: "Pet Fence Installation | Premier Fencing",
   metaDescription:
-    "Secure pet fencing options for Southern Ontario yards. Plan privacy, height and materials with Premier Fencing.",
+    "Secure pet fencing options for Toronto yards. Plan privacy, height and materials with Premier Fencing.",
   headline: "Boundaries built for pets and peace of mind.",
   intro:
     "Pet fencing balances containment, durability, and the look of your yard — from chain link to privacy options depending on your priorities.",
   tone: "from-[#3d4a38] via-[#5c6b52] to-[#222a20]",
+  image: "/images/services/pet-fence.jpg",
   benefits: [
     "Secure containment",
     "Material flexibility",
@@ -189,13 +195,14 @@ export const commercialContent: ServicePageContent = {
   slug: "commercial",
   path: "/commercial-fencing",
   title: "Commercial Fencing",
-  metaTitle: "Commercial Fencing Southern Ontario | Premier Fencing",
+  metaTitle: "Commercial Fencing Toronto | Premier Fencing",
   metaDescription:
-    "Commercial fencing, security fencing and automated gates for businesses and institutions across Southern Ontario.",
+    "Commercial fencing, security fencing and automated gates for businesses and institutions across Toronto.",
   headline: "Commercial fencing that protects the property behind it.",
   intro:
     "Perimeter security, durable materials, controlled access, and site-specific planning for commercial yards, sports facilities, and institutional properties.",
   tone: "from-[#2a2e32] via-[#3a4048] to-[#1a1c1e]",
+  image: "/images/services/commercial-fence.jpg",
   benefits: [
     "Perimeter security",
     "Chain link and ornamental options",
@@ -219,13 +226,14 @@ export const decksContent: ServicePageContent = {
   slug: "decks",
   path: "/decks",
   title: "Custom Decks",
-  metaTitle: "Deck Builders Kitchener-Waterloo | Premier Fencing",
+  metaTitle: "Deck Builders Toronto | Premier Fencing",
   metaDescription:
-    "Custom wood, composite and vinyl decks built for outdoor living across Kitchener-Waterloo, London and Southern Ontario.",
+    "Custom wood, composite and vinyl decks built for outdoor living across Toronto.",
   headline: "Build the part of your home you use outside.",
   intro:
     "From composite and wood to vinyl surfaces and railings, Premier designs decks around how you entertain, relax, and move through the backyard.",
   tone: "from-[#6b4a32] via-[#4a3224] to-[#241810]",
+  image: "/images/services/deck.jpg",
   benefits: [
     "Composite decking",
     "Wood decks",
@@ -261,13 +269,14 @@ export const gatesContent: ServicePageContent = {
   slug: "gates",
   path: "/gates-automation",
   title: "Gates & Automation",
-  metaTitle: "Gates & Automation Southern Ontario | Premier Fencing",
+  metaTitle: "Gates & Automation Toronto | Premier Fencing",
   metaDescription:
-    "Estate gates, driveway gates and gate automation for residential and commercial properties across Southern Ontario.",
+    "Estate gates, driveway gates and gate automation for residential and commercial properties across Toronto.",
   headline: "Gates that control access and finish the entrance.",
   intro:
     "From estate and driveway gates to commercial access systems, we plan for presence, security, and the day-to-day way people enter your property.",
   tone: "from-[#1c1c1c] via-[#333] to-[#555]",
+  image: "/images/services/automated-gates.jpg",
   benefits: [
     "Estate gates",
     "Driveway gates",
@@ -292,11 +301,12 @@ export const pergolaContent: ServicePageContent = {
   title: "Pergolas & Outdoor Living",
   metaTitle: "Pergolas & Outdoor Living | Premier Fencing",
   metaDescription:
-    "Pergolas, railings and outdoor living structures from Premier Fencing across Southern Ontario.",
+    "Pergolas, railings and outdoor living structures from Premier Fencing across Toronto.",
   headline: "More than a fence line — outdoor living that fits the yard.",
   intro:
     "Pergolas, railings, and outdoor structures help Premier position the backyard as a finished living space, not just a perimeter.",
   tone: "from-[#5a4a3a] via-[#354a3b] to-[#1e2a22]",
+  image: "/images/services/pergola.jpg",
   benefits: [
     "Pergolas",
     "Railings",

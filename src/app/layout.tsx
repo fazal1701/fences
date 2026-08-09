@@ -15,9 +15,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = buildMetadata({
-  title: "Fence & Deck Contractors Kitchener-Waterloo | Premier Fencing",
+  title: "Fence & Deck Contractors Toronto | Premier Fencing",
   description:
-    "Premier Fencing installs residential and commercial fencing, decks, gates and outdoor living solutions throughout Kitchener-Waterloo, London and Southern Ontario. Request a free quote.",
+    "Premier Fencing installs residential and commercial fencing, decks, gates and outdoor living across Toronto. Call (519) 500-5545 or request a free quote.",
   path: "/",
 });
 
